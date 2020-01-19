@@ -1,0 +1,452 @@
+body
+{
+    background: url(../img/bg.png);
+
+   
+    
+}
+
+.login-panel
+{
+    border: 1px solid #fff;
+    height: 500px;
+    margin-top: 100px;
+    border-radius: 6px;
+   
+    background: rgba(92, 73, 129, 0.5);
+   
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #ff4301;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+
+.login_btn{
+color: white;
+background-color: #82005a;
+width: 100px;
+}
+
+.login_btn:hover{
+color: #ff4301;
+background-color: white;
+}
+
+
+.username
+{
+    text-align: right;
+    padding-right: 30px;
+    padding-top: 30px;
+    color: white;
+    width: 100%;
+    font-family: 'El Messiri', sans-serif !important;
+}
+
+.password
+{
+   text-align: right;
+    padding-right: 30px;
+    padding-top: 15px;
+    color: white;
+    width: 100%;
+    font-family: 'El Messiri', sans-serif !important;
+}
+
+.remember-me
+{
+    padding-left: 25px;
+    padding-top: 20px;
+    color: #fff;
+    font-family: 'El Messiri', sans-serif !important;
+}
+
+input[type='checkbox']:before {
+        background-color: #2d7b65 !important;
+        content: '';
+    }
+
+.btn-primary.login-btn {
+        color: #fff;
+    background-color: #2d7b65;
+    border-color: #fff !important;
+    float: right;;
+}
+
+.login-btn.btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem #2d7b65 !important;
+}
+
+.login-btn.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #2d7b65;
+    border-color: #fff !important;
+}
+
+.login-btn.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 2px 15px 2px 15px !important;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0px !important;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        margin-right: 30px;
+    margin-top: 15px;
+    font-family: 'El Messiri', sans-serif !important;
+}
+
+.lost-password
+{
+        color: #fff;
+    float: right;
+    padding-top: 20px;
+    padding-right: 30px;
+    font-family: 'El Messiri', sans-serif !important;
+}
+
+.login-logo
+{
+        padding-top: 260px;
+    padding-left: 200px;
+}
+
+.login-logo h5
+{
+            text-align: center;
+    padding-right: 80px;
+    padding-top: 40px;
+    color: #fff;
+    font-family: 'El Messiri', sans-serif !important;
+}
+
+.left-arrow
+{
+	    color: #fff;
+    font-family: 'El Messiri', sans-serif !important;
+}
+
+.tech-support
+{
+            float: right;
+    padding-right: 60px;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.tech-support h5
+{
+        font-size: 15px;
+    float: left;
+    padding-right: 10px;
+    font-family: 'El Messiri', sans-serif !important;
+}
+
+
+
+
+@media only screen and (max-width: 991px) and (min-width: 769px)
+{
+    
+    .login-logo {
+    padding-top: 40px;
+    text-align: center !important;
+}
+
+.login-logo h5 {
+    text-align: center !important;
+    padding-top: 40px;
+    color: #fff;
+    font-family: 'El Messiri', sans-serif !important;
+}
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 500px)
+{
+    .login-logo {
+    padding-top: 50px;
+    padding-left: 0px;
+    text-align: center;
+}
+
+.login-logo h5 {
+    text-align: center;
+    padding-right: 0px;
+    padding-top: 40px;
+    color: #fff;
+    font-family: 'El Messiri', sans-serif !important;
+}
+
+.left-arrow {
+    color: #fff;
+    font-family: 'El Messiri', sans-serif !important;
+    text-align: center;
+    padding-top: 15px;
+}
+
+    .tech-support {
+    text-align: center;
+    padding-right: 0px;
+    color: #fff;
+    padding-top: 35px;
+        float: none;
+        margin-bottom: 30px;
+}
+    
+    .tech-support h5 {
+        text-align: center;
+    font-size: 15px;
+    padding-right: 0px;
+        float: none;
+}
+    
+    .remember-me {
+    padding-left: 40px;
+    padding-top: 20px;
+    color: #fff;
+    font-family: 'El Messiri', sans-serif !important;
+}
+    
+    .lost-password {
+    color: #fff;
+    float: right;
+    padding-top: 20px;
+    padding-right: 0px;
+    font-family: 'El Messiri', sans-serif !important;
+}
+    
+}
+
+@media(max-width:480px)
+{
+    .login-panel {
+    border: 1px solid #fff;
+    height: 500px;
+    margin-top: 50px;
+    border-radius: 6px;
+    background-color: #434343;
+}
+    
+    .username {
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 30px;
+    color: white;
+    width: 100%;
+    font-family: 'El Messiri', sans-serif !important;
+}
+
+.password {
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 15px;
+    color: white;
+    width: 100%;
+    font-family: 'El Messiri', sans-serif !important;
+}
+
+.remember-me {
+    padding-left: 15px;
+    padding-top: 20px;
+    color: #fff;
+    font-family: 'El Messiri', sans-serif !important;
+}
+
+.lost-password {
+    color: #fff;
+    float: right;
+    padding-top: 20px;
+    padding-right: 0px;
+    font-family: 'El Messiri', sans-serif !important;
+}
+
+
+.login-btn.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 2px 15px 2px 15px !important;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0px !important;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-right: 20px;
+    margin-top: 15px;
+    font-family: 'El Messiri', sans-serif !important;
+}
+
+
+
+.login-logo {
+    padding-top: 35px;
+    text-align: center !important;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+    
+    .login-logo h5 {
+    text-align: center;
+    padding-right: 0px;
+    padding-top: 40px;
+    color: #fff;
+    font-family: 'El Messiri', sans-serif !important;
+}
+
+
+.left-arrow
+{
+	    color: #fff;
+    font-family: 'El Messiri', sans-serif !important;
+    text-align: center !important;
+    padding-top: 20px;
+}
+
+
+    .tech-support {
+    text-align: center;
+    padding-right: 0px;
+    color: #fff;
+    padding-top: 35px;
+        float: none;
+        margin-bottom: 30px;
+}
+    
+    .tech-support h5 {
+        text-align: center;
+    font-size: 15px;
+    padding-right: 0px;
+        float: none;
+}
+}
+
+    @media screen and (max-device-width: 2000px) and (min-device-width: 1400px)
+{
+    .tech-support
+{
+            float: right;
+    padding-right: 60px;
+    color: #fff;
+    padding-top: 160px;
+}
+
+}
+
+.password-input {
+    display: block;
+    width: 90%;
+    padding: 10px 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-right: 30px;
+    float: right;
+}
+
+input:focus {
+
+    background-color: yellow;
+
+}
+
+.username-input {
+    display: block;
+    width: 90%;
+    padding: 10px 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-right: 30px;
+    float: right;
+}
+.powered_by{
+    color: #fff;
+}
+
+#error {
+    visibility: visible;
+    min-width: 250px;
+    margin-left: -125px;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#message {
+    visibility: visible;
+    min-width: 250px;
+    margin-left: -125px;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#error.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+.field-db {
+    visibility: visible;
+    padding: 16px;
+    position: fixed;
+    color: black
+}

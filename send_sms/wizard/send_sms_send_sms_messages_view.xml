@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+
+
+
+    <record model="ir.ui.view" id="sms_send_messages_tree">
+      <field name="name">sms.send.messages.form</field>
+      <field name="model">sms.send.messages</field>
+      <field name="arch" type="xml">
+        <tree string="Send Messages">
+          <field name="sending_date"/>
+          <field name="template_id"/>
+          <field name="partner_type"/>
+          <field name="sending_time"/>
+
+
+        </tree>
+
+      </field>
+    </record>
+    <record model="ir.ui.view" id="sms_send_messages_form">
+      <field name="name">sms.send.messages.form</field>
+      <field name="model">sms.send.messages</field>
+      <field name="arch" type="xml">
+        <form string="Send Messages">
+          <header>
+            <button string="Send" name="send_messages_action" states="draft" type="object" class="btn-primary"/>
+            <button string="Send Later" name="action_scheduled" states="draft" type="object" class="btn-primary"/>
+            <button string="Cancel" name="action_cancelled" states="schedule" type="object" class="btn-primary"/>
+            <button string="Rest Draft" name="action_rest_draft" states="cancel" type="object" class="btn-primary"/>
+            <button string="Clear Partners" name="action_delete_lines" states="draft" type="object" class="btn-primary"/>
+
+
+            <field name="state" widget="statusbar" statusbar_visible="draft,send,schedule,cancel"/>
+          </header>
+          <sheet>
+            <group>
+              <group>
+                <field name="partner_type"  attrs="{'readonly':[('state','!=','draft')]}" widget="radio"/>
+                <field name="template_id"  attrs="{'readonly':[('state','!=','draft')]}"/>
+              </group>
+              <group>
+                <field name="sending_time" attrs="{'readonly':[('state','!=','draft')]}"  widget="radio"/>
+                <field name="sending_date" attrs="{'invisible':[('sending_time','!=','later')],'readonly':[('state','!=','draft')]}"/>
+              </group>
+
+            </group>
+
+            <label for='partner_ids' />
+            <field name = "partner_ids" attrs="{'readonly':[('state','!=','draft')]}"/>
+            
+
+
+          </sheet>
+        </form>
+
+      </field>
+    </record>
+    <act_window id="action_send_message"
+            name="Send Message"
+            res_model="sms.send.messages"
+            view_mode="tree,form"
+            target="current"
+            context="{}"
+            domain="[]"
+/>
+
+    <menuitem name="Send Message" id="send_messages_menue" parent="sms_main_menue" sequence="3"/>
+    <menuitem
+      id="sms_send_messages_sub_menu"
+      name="Send SMS"
+      action="action_send_message"
+      parent="send_messages_menue"
+      sequence="10"/>
+  </data>
+</odoo>

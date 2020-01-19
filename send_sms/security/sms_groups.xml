@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        
+        <record id="sms_menu_category" model="ir.module.category">
+            <field name="name">SMS management</field>
+        </record>
+
+
+        <record id="group_sms_manager" model="res.groups">
+            <field name="name">SMS manager</field>
+            <field name="category_id" ref="sms_menu_category"/>
+       
+        </record>
+
+           <record id="group_sms_user" model="res.groups">
+            <field name="name">SMS User</field>
+            <field name="category_id" ref="sms_menu_category"/>
+       
+        </record>
+    </data>
+</odoo>

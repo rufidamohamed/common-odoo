@@ -1,0 +1,1281 @@
+/*
+ @font-face {
+      font-family: 'GEThameen';
+      src: url('/tis_web_arabic/static/src/fonts/GEThameen-DemiBold.eot?81411578');
+      src: url('/tis_web_arabic/static/src/fonts/GEThameen-DemiBold.eot?81411578#iefix') format('embedded-opentype'),
+           url('/tis_web_arabic/static/src/fonts/GEThameen-DemiBold.woff?81411578') format('woff'),
+           url('/tis_web_arabic/static/src/fonts/GEThameen-DemiBold.ttf?81411578') format('truetype'),
+           url('/tis_web_arabic/static/src/fonts/GEThameen-DemiBold.svg?81411578#fontello') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+*/
+
+@font-face {
+  font-family: 'Droid Arabic Kufi';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/tis_web_arabic/static/src/fonts/DroidKufi-Regular.eot);
+  src: url(/tis_web_arabic/static/src/fonts/DroidKufi-Regular.woff2) format('woff2'),
+       url(/tis_web_arabic/static/src/fonts/DroidKufi-Regular.woff) format('woff'),
+       url(/tis_web_arabic/static/src/fonts/DroidKufi-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Droid Arabic Kufi';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/tis_web_arabic/static/src/fonts/DroidKufi-Bold.eot);
+  src: url(/tis_web_arabic/static/src/fonts/DroidKufi-Bold.woff2) format('woff2'),
+       url(/tis_web_arabic/static/src/fonts/DroidKufi-Bold.woff) format('woff'),
+       url(/tis_web_arabic/static/src/fonts/DroidKufi-Bold.ttf) format('truetype');
+}
+
+.rtl
+{
+    direction:rtl
+}
+
+/*
+*:not(.fa){font-family: 'GEThameen'
+}
+*/
+
+body
+{
+    font-family: 'Droid Arabic Kufi', serif !important;
+}
+
+.o_menu_apps .dropdown-menu.show .o-app-name {
+        color: black;
+    font-family: Amiri;
+    font-weight: bold;
+}
+
+.joblabel
+{
+    float: right !important;
+}
+
+.product_price
+{
+    text-align: right;
+}
+
+.variant_attribute 
+{
+    text-align: right;
+}
+
+.close {
+    float: left;
+    left: 0;
+}
+
+.xs-nav-tab .nav-item {
+    margin-right: 40px !important;
+}
+
+.xs-newsletter.newsLetter-v3 input:not([type=submit]) {
+    border: 1px solid #e7e7e7;
+    border-right: 0;
+    background-color: #FFF;
+    border-radius: 0px !important;
+    cursor: auto !important;
+}
+
+.footer_widget
+{
+    text-align: right !important;
+    margin-bottom: 15px !important;
+}
+
+#top_menu {
+    text-align: left !important;
+}
+
+.ml-auto, .mx-auto {
+    margin-right: auto !important;
+    margin-left: 0px !important;
+}
+
+.o_form_sheet h2
+{
+	text-align: right !important;
+}
+
+.o_list_number
+{
+        font-family: 'Droid Arabic Kufi', serif !important;  
+}
+
+/*
+.o_field_monetary
+{
+     font-family: "Roboto" !important;  
+}
+*/
+
+.oe_title h1 {
+    float: left !important;
+}
+
+.modal-footer
+{
+    direction: ltr;
+}
+
+.modal-footer .btn-secondary {
+    margin-left: 5px !important;
+}
+
+.o_list_text
+{
+    font-family: "Roboto" !important; 
+}
+
+/*
+.o_field_number
+{
+     font-family: "Roboto" !important; 
+}
+*/
+
+.o_field_text
+{
+    font-family: "Roboto" !important; 
+}
+
+.d-md-block{
+    text-align: right !important;
+}
+
+span.o_field_char 
+{
+    font-family: "Roboto" !important;
+}
+
+.modal-body
+{
+        text-align: right;
+    font-size: 14px;
+}
+
+span[name="number"] {
+    font-family: "Roboto" !important;
+}
+
+button[name="button_open_payments"] {
+    text-align: center !important;
+}
+
+.top-header .ht-right .h-col i:not(.fa) {
+    font-size: 22px;
+    line-height: 38px;
+    font-family: 'themify' !important;
+}
+
+[class^="ti-"], [class*=" ti-"]
+{
+        font-family: 'themify' !important;
+}
+
+.top-header .htl-social {
+    float: right;
+}
+
+.top-header .ht-right {
+    float: left;
+}
+
+.top-header .ht-right .h-col .h-col-hover
+{
+    right: auto;
+    left: 0;
+}
+
+.o_main_navbar > ul > li > a {
+    height: 46px;
+    padding: 0 10px;
+    color: black;
+    line-height: 46px;
+/*    font-size: 17px;*/
+    font-family: Amiri;
+}
+
+#product_detail #product_details h1 {
+    font-size: 24px;
+    line-height: 30px;
+    text-decoration: none;
+    color: #323232;
+    margin: 0 0 20px;
+    font-weight: 600;
+    text-align: right;
+}
+
+#product_detail js_main_product
+{
+    text-align: right;
+}
+
+
+.middle-footer .fot-col h3 {
+    font-size: 17px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 0 25px;
+    padding: 0 0 10px;
+    position: relative;
+    text-align: right;
+    font-family: 'Droid Arabic Kufi', serif !important;
+}
+
+.middle-footer .fot-col h3:after {
+    width: 35px;
+    height: 1px;
+    background: #585858;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: "";
+}
+
+.middle-footer .fot-col ul li {
+    position: relative;
+    padding: 0px 15px 0 15px;
+    margin: 0 0 10px 0;
+    text-align: right;
+}
+
+.middle-footer .fot-col ul li:after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 9px;
+    right: 0;
+    border-top: 1px solid #9c9c9c;
+    border-right: 1px solid #9c9c9c;
+    transform: rotate(225deg);
+}
+
+.middle-footer .fot-col address > div > span {
+    font-size: 15px;
+    margin-bottom: 10px;
+    display: block;
+    letter-spacing: 0.5px;
+    text-align: right;
+}
+
+.middle-footer .fot-col address > div > div {
+    position: relative;
+    padding-right: 30px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.middle-footer .fot-col address > div > div i {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    color: #fff;
+}
+
+.navbar-nav>li {
+    float: right !important;
+    font-family: 'Droid Arabic Kufi', serif;
+}
+
+.o_quick_view_panel .close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    width: 35px;
+    height: 35px;
+    background: #000;
+    opacity: 1;
+    padding: 0;
+    text-shadow: none;
+    color: #fff;
+    margin: 0;
+}
+
+.fa-chevron-left
+{
+        float: left;
+    padding-left: 5px;
+        margin-top: 4px;
+}
+
+.fa-chevron-right
+{
+        float: right;
+    padding-right: 5px;
+        margin-top: 2px;
+}
+
+img.o_we_selected_image, .fa.o_we_selected_image::before {
+    background: none;
+    outline: none;
+}
+
+#payment_method h3
+{
+    font-family: 'Droid Arabic Kufi', serif
+}
+
+.bg-info-light {
+    background-color: rgba(23, 162, 184, 0.1);
+    text-align: right;
+}
+
+.bg-info span
+{
+    float: right;
+}
+
+.oe_cart > .text-left {
+    text-align: right !important;
+        font-family: 'Droid Arabic Kufi', serif !important;
+}
+
+.carousel-indicators {
+       position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    z-index: 15;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+
+.oe_login_form, .oe_signup_form, .oe_reset_password_form {
+    max-width: 340px;
+    position: relative;
+    margin: 50px auto;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    text-align: right;
+}
+
+.is-breadcrumb h1, .is-breadcrumb .h1 {
+    color: #323232;
+    font-size: 50px;
+    font-family: 'Droid Arabic Kufi', serif !important;
+}
+
+.footer-top h4 {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-family: 'Droid Arabic Kufi', serif !important;
+}
+
+.is-breadcrumb .breadcrumb li:not(:first-child):after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    height: 15px;
+    width: 1px;
+    background: #000;
+    margin: auto;
+    transform: rotate(10deg);
+    opacity: 0.2;
+}
+
+    address 
+    {
+    text-align: right;
+}
+
+.s_title h1
+{
+    text-align: right;
+        font-family: 'Droid Arabic Kufi', serif !important;
+}
+
+.oe_website_sale p
+{
+    text-align: right;
+}
+
+.checkout_autoformat
+{
+    text-align: right;
+}
+
+.cart_lines_popup.show_mini_cart {
+    left: 0;
+    right: auto;
+}
+
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    direction: ltr;
+}
+
+.oe_website_sale h3
+{
+    text-align: right;
+}
+
+.oe_product h3 
+{
+    text-align: center;
+}
+
+.oe_product p 
+{
+    text-align: center;
+}
+
+.js_cart_summary h4
+{
+    text-align: right;
+}
+
+#shipping_and_billing a
+{
+    float: left !important;
+}
+
+#shipping_and_billing
+{
+    text-align: right;
+}
+
+#payment_method
+{
+    text-align: right;
+}
+
+.letter-spacing-2 {
+    letter-spacing: 0px;
+}
+
+header .mobile-toggle {
+    position: absolute;
+    left: 15px;
+    bottom: 18px;
+    z-index: 17;
+    right: auto;
+}
+
+.wishlist-section
+{
+    text-align: right;
+}
+
+.wishlist-section .mr8 {
+    margin-left: 8px !important;
+}
+
+.wishlist-section .radio label, .checkbox label {
+    padding-left: 20px;
+    padding-right: initial;
+}
+
+.wishlist-section .text-left {
+    text-align: right !important;
+}
+
+.card-body
+{
+    text-align: right;
+}
+
+.oe_website_sale h1
+{
+    text-align: right;
+}
+
+.o_page_header
+{
+    text-align: right;
+}
+
+.feature-content .font-15 
+{
+    font-size: 17px;
+}
+   
+.feature-content .font-12 {
+    font-size: 14px;
+}
+
+#shipping_use_same {
+    margin-right: 8px !important;
+    margin-left: 8px !important;
+}
+
+#footer .footer-bottom .copyright {
+    margin: 0;
+    font-size: 13px;
+    color: #a2a2a2;
+    text-align: right !important;
+}
+
+.footer-payment
+{
+    text-align: left;
+}
+
+#products_grid .oe_list .pro-info h3 {
+    text-align: right;
+    font-size: 20px;
+}
+
+#products_grid .oe_list .product_price {
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 25px;
+    position: relative;
+}
+
+.mm-maga-main.mm-mega-cat-level .mm-category-level .mm-cat-list .mm-heading > a {
+    padding-bottom: 10px;
+    font-size: 16px;
+    color: #323232;
+    font-weight: 600;
+    text-align: right;
+    line-height: 28px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.alan_note .light-gray-bg-01 {
+    background-color: #f3f8fb;
+    direction: rtl;
+}
+
+.feature-box-04 {
+    position: relative;
+    padding-right: 60px;
+    text-align: right;
+}
+
+.feature-box-04 .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 38px;
+}
+
+.shop-breadcrumb h1
+{
+    text-align: center;
+}
+
+#product_detail .owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    direction: rtl !important;
+}
+
+.cart_lines_popup .mini_cart .mini_cart_lines .m_c_img {
+    width: 20%;
+    float: right;
+}
+
+.cart_lines_popup .mini_cart .mini_cart_lines .m_c_info {
+    width: 80%;
+    float: left;
+    padding-right: 20px;
+    text-align: right;
+}
+
+.cart_lines_popup .mini_cart_total .m_c_total, .cart_lines_popup .mini_cart_total .m_c_label {
+    width: 50%;
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+    float: right;
+    text-align: right;
+}
+
+.cart_lines_popup .mini_cart_total .m_c_value {
+    width: 50%;
+    float: right;
+    text-align: left;
+}
+
+.oe_currency_value
+{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Noto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.top-header .ht-right .h-col .my_wish_quantity, .top-header .ht-right .h-col .my_cart_quantity {
+    position: absolute;
+    top: 1px;
+    right: 3px;
+    font-weight: 400;
+    font-size: 9px;
+    min-width: 20px;
+    min-height: 20px;
+    line-height: 20px;
+    padding: 0;
+    border-radius: 50%;
+    z-index: 1;
+    background: #f3847c;
+    text-align: center;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Noto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+span[itemprop="telephone"] {
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Noto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    direction: ltr !important;
+    display: block;
+}
+
+.td-product_name span 
+{
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Noto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    direction: ltr;
+    display: block;
+}
+
+.oe_website_sale em
+{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Noto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.o_product_circle
+{
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Noto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.middle-footer .fot-col:not(:first-child) {
+    border-right: 1px solid #333333;
+}
+
+.o_form_view .oe_inline, .o_form_view .oe_left, .o_form_view .oe_right, .o_form_view .o_group.o_inner_group.oe_subtotal_footer {
+    float: unset;
+    text-align: right;
+}
+
+@media (min-width: 768px)
+{
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-right: 0px;
+    margin-left: 15px;
+}
+    .mm-maga-main
+    {
+        text-align: right;
+    }
+    
+    .mm-maga-main.mm-mega-cat-level .mm-category-level .mm-cat-level-1 .mm-cat-level-2 {
+    position: absolute;
+    right: 25%;
+    top: 0;
+    width: 75%;
+    min-height: 100%;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    padding: 20px;
+    opacity: 0;
+    border: 1px solid #eee;
+    border-top: none;
+    background: #fff;
+}
+    
+    .mm-maga-main.mm-mega-cat-level .mm-category-level .mm-cat-level-1 .cat-level-title.active-li > a:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0;
+    border-right: 16px solid #eee;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    height: 1px;
+    width: 1px;
+    margin: auto;
+}
+    
+    .mm-maga-main {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background: #ffffff;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    padding: 0;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    transform-origin: 0 0;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    box-shadow: 0 13px 16px 1px rgba(0, 0, 0, 0.11);
+    text-align: right;
+    overflow-y: auto;
+    max-height: 80vh;
+    z-index: 4;
+}
+    
+    .o_extra_menu_items .dropdown-menu > .mm-mega-menu .mm-maga-main.mm-mega-cat-level .mm-category-level .mm-cat-level-1 .mm-cat-level-2 {
+    position: relative;
+    border: none;
+    visibility: visible !important;
+    opacity: 1 !important;
+    right: auto;
+    top: auto;
+    padding: 0;
+    width: 100%;
+    left: 0;
+}
+    
+    .mm-maga-main.mm-mega-cat-level .mm-cat-list {
+    width: 33.33%;
+    float: right;
+    margin: 0;
+    padding: 0 15px 20px;
+    list-style: none;
+}
+    
+    header .navbar-collapse .navbar-nav > li.dropdown.o_extra_menu_items > .dropdown-menu, header .navbar-collapse .navbar-nav > li.dropdown:last-child > .dropdown-menu {
+    left: 0;
+    right: auto;
+}
+    
+    .o_menu_apps .dropdown-menu.show .o_app {
+    width: 18%;
+}
+    
+}
+
+@media (min-width: 1200px)
+{
+    #product_detail #product_details {
+    margin-left: 5%;
+    flex: 0 0 45%;
+    max-width: 45%;
+    text-align: right;
+}
+}
+
+
+@media(max-width:767px)
+{
+    #wrapwrap.o_header_overlay > header:not(.o_header_affix) {
+    position: relative !important;
+    top: 0;
+    left: 0;
+    bottom: auto;
+    right: 0;
+    z-index: 1000;
+}
+    
+    .mob-main-nav-open .navbar .navbar-collapse {
+    right: 0;
+    display: block !important;
+}
+    
+    .mob-main-nav-open .mobile-toggle .mobile_toggle_menu.close-menu {
+    height: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    right: 280px;
+    bottom: 0;
+    width: calc(100% - 280px);
+    z-index: 9;
+    background: #000 !important;
+    opacity: 0.7;
+    pointer-events: auto;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -webkit-transition-delay: 0.3s;
+    -moz-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+    
+    header .navbar .navbar-collapse .navbar-nav > li {
+    width: 100%;
+    text-align: right;
+}
+    
+    .fa-chevron-left:before {
+    content: "\f053" !important;
+}
+    
+    .fa-chevron-left {
+    float: left;
+    padding-right: 5px;
+    margin-top: 4px;
+}
+    
+    .fa-chevron-right:before {
+    content: "\f054" !important;
+}
+    
+    .fa-chevron-right {
+    float: right;
+    padding-left: 5px;
+    margin-top: 2px;
+}
+    
+    .carousel-indicators {
+    right: 50%;
+    left: auto;
+    margin-right: -30%;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+    
+}
+
+@media(max-width:991px)
+{
+    .o_quick_view_panel #product_detail #product_details {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: right;
+}
+    
+    .progress-wizard .progress-wizard-step.active .progress-wizard-steplabel {
+    color: #212529;
+    font-weight: bolder;
+    float: right;
+}
+    
+    #product_detail #product_details {
+    margin-top: 30px;
+    text-align: right;
+}
+    
+    .s_website_form 
+    {
+        text-align: right;
+    }
+    
+    .feature-box-04 {
+    position: relative;
+    padding-right: 60px;
+    text-align: right;
+}
+
+.feature-box-04 .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 38px;
+}
+    
+}
+
+
+
+.o_kanban_view .oe_kanban_card .oe_kanban_details ul, .o_kanban_view .o_kanban_record .oe_kanban_details ul {
+    margin-bottom: 2.5px;
+    padding-right: 0;
+    list-style: none;
+    font-size: 12px !important;
+    text-align: right;
+}
+
+.o_kanban_view .o_kanban_record.o_kanban_record_has_image_fill .o_kanban_image + div {
+    padding-right: 0 !important;
+    margin-right: 15px;
+}
+
+.o_kanban_view .o_kanban_record .o_kanban_record_title {
+    margin-right: 10px !important;
+}
+
+.o_secondary span
+{
+    font-size: 15px;
+}
+
+.o_kanban_primary_right
+{
+        font-size: 15px;
+}
+
+.show .dropdown-menu .dropdown-header {
+    color: #fff !important;
+    background-color: #82005a !important;
+    font-size: 15px;
+}
+
+input[name="beneficiary"]
+{
+        font-family: "Roboto" !important;
+    font-weight: bold;
+}
+
+input[name="amount"]
+{
+        font-family: "Roboto" !important;
+    font-weight: bold;
+}
+
+input[name="date"]
+{
+        font-family: "Roboto" !important;
+    font-weight: bold;
+}
+
+input[name="number"]
+{
+        font-family: "Roboto" !important;
+    font-weight: bold;
+}
+
+input[name="description"]
+{
+        font-family: "Roboto" !important;
+    font-weight: bold;
+}
+
+input[name="release_at"]
+{
+        font-family: "Roboto" !important;
+    font-weight: bold;
+}
+
+/*
+.o_required_modifier
+{
+    font-family: "Roboto" !important;
+}
+
+.o_readonly_modifier
+{
+    font-family: "Roboto" !important;
+}
+*/
+
+.o_account_reports_page .o_account_reports_table {
+    width: 100%;
+    direction: rtl;
+        border: 1px solid #000;
+}
+
+.o_account_reports_page .o_account_reports_table .number {
+    text-align: center;
+/*    width: 50%;*/
+        border: 1px solid #000;
+}
+
+/*
+.o_account_report_column_value
+{
+    font-family: "Roboto" !important;
+}
+*/
+
+/*
+.dropdown-item
+{
+    font-size: 15px !important;
+}
+*/
+
+a[name="period_id"] {
+    font-family: "Roboto" !important;
+}
+
+.o_form_view .o_group .o_td_label .o_form_label {
+    font-weight: bold;
+    margin-right: 0px;
+/*    font-size: 17px;*/
+}
+
+.o_notebook
+{
+    font-size: 13px;
+}
+
+span[name="debit"] {
+    font-family: "Roboto" !important;
+}
+
+span[name="credit"] {
+    font-family: "Roboto" !important;
+}
+
+a[name="move_id"] {
+    font-family: "Roboto" !important;
+}
+
+a[name="account_id"] {
+    font-family: "Roboto" !important;
+}
+
+span[name="name"] {
+    font-family: 'Droid Arabic Kufi', serif !important;
+}
+
+span[name="date_maturity"] {
+    font-family: 'Droid Arabic Kufi', serif !important;
+}
+
+.o_kanban_view .o_kanban_record .o_kanban_record_title {
+    color: inherit;
+/*    font-size: 15px;*/
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.o_kanban_view .oe_kanban_card .oe_kanban_details ul li, .o_kanban_view .o_kanban_record .oe_kanban_details ul li {
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+
+/*
+.o_list_view.table, .o_list_view.table thead, .o_list_view.table tfoot, .o_list_view.table td, .o_list_view.table th {
+    border: none;
+    font-size: 15px !important;
+}
+*/
+
+.o_account_reports_no_print
+{
+    font-size: 15px;
+}
+
+.o_account_reports_page .o_account_reports_caret_icon {
+    position: absolute;
+    margin-right: -10px;
+}
+
+input[name="date_start"] {
+    font-family: "Roboto" !important;
+}
+
+input[name="date_stop"] {
+    font-family: "Roboto" !important;
+}
+
+input[name="date_due"] {
+    font-family: "Roboto" !important;
+}
+
+input[name="date_invoice"] {
+    font-family: "Roboto" !important;
+}
+
+.o_form_view .o_form_sheet_bg > .o_form_sheet {
+    margin: 12px auto;
+}
+
+.o_kanban_view.o_kanban_dashboard .o_kanban_record.o_dropdown_open .o_kanban_card_manage_pane {
+    display: block;
+    font-size: 15px;
+}
+
+.o_kanban_card_manage_title
+{
+	font-size: 15px;
+}
+
+/*
+.o_form_label
+{
+    font-size: 17px !important;
+}
+*/
+
+.o_form_view .o_form_sheet_bg .o_notebook .nav-tabs .nav-item {
+    white-space: nowrap;
+/*    font-size: 16px;*/
+}
+
+.o_form_view .o_form_statusbar > .o_statusbar_status > .o_arrow_button.disabled {
+    opacity: 1.0;
+    color: #004445;
+    pointer-events: none;
+    border-left: 1px solid #E5E5E5;
+    font-size: 13px !important;
+    font-family: Amiri;
+}
+
+.o_form_view .o_form_statusbar > .o_statusbar_status > .o_arrow_button.btn-primary.disabled {
+    color: #004445;
+    font-size: 13px !important;
+    background-color: #f0f5ff;
+    cursor: default;
+    font-family: Amiri;
+}
+
+.o_base_settings .o_setting_container .settings_tab .selected .app_name {
+    color: black;
+    font-family: Amiri;
+    padding-right: 10px;
+}
+
+.settings_tab .app_name 
+{
+    padding-right: 10px;
+    font-family: Amiri;
+    color: black;
+
+}
+
+.o_form_button_create
+{
+    font-size: 15px;
+    font-family: Amiri;
+}
+
+.o_form_button_edit
+{
+    font-size: 15px;
+    font-family: Amiri;
+}
+
+.o_form_view .o_form_statusbar > .o_statusbar_buttons > .btn {
+    min-height: 25px;
+    margin: 4px 3px 4px 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 15px;
+    font-family: Amiri;
+}
+
+button[special="cancel"] {
+   font-size: 15px;
+}
+
+.o_form_uri
+{
+    font-size: 15px;
+}
+
+.o_form_view .o_group.o_inner_group > tbody > tr > td span.o_field_widget, .o_form_view .o_group.o_inner_group > tbody > tr > td .o_field_boolean.o_field_widget, .o_form_view .o_group.o_inner_group > tbody > tr > td .oe_avatar.o_field_widget, .o_form_view .o_group.o_inner_group > tbody > tr > td .o_form_uri.o_field_widget {
+    width: auto;
+    font-size: 15px !important;
+}
+
+.o_list_button_add
+{
+    font-size: 15px;
+}
+
+.o_button_import
+{
+    font-size: 15px;
+}
+
+tfoot > tr > td[title="Total Debit"]
+{
+    color: #fff !important;
+}
+
+tfoot > tr > td[title="Total Credit"]
+{
+    color: #fff !important;
+}
+
+tfoot > tr > td[title="Total Balance"]
+{
+    color: #fff !important;
+}
+
+.o_field_widget.o_field_many2manytags .o_tag_color_0 {
+    background-color: white;
+    color: #777777;
+    box-shadow: inset 0 0 0 2px #777777;
+    font-size: 14px;
+}
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    padding-left: 5px;
+}
+
+tfoot .o_list_number
+{
+    color: #fff !important;
+}
+
+.rtl .oe_kanban_action_button.btn {
+    float: none;
+    margin-left: 5px;
+}
+
+.o_menu_apps .dropdown-menu.show .o-app-icon {
+    height: auto;
+    max-width: 7rem;
+    width: 100%;
+    margin-bottom: 6px !important;
+}
+
+.o_form_view .oe_button_box .oe_stat_button {
+    color: #4c4c4c;
+    text-align: center;
+    width: 132px !important;
+    height: 40px;
+    margin: 0px -1px -1px 0px;
+    padding: 0;
+    border-radius: 0;
+    border-color: #ccc;
+    background: white;
+    outline: none;
+}
+
+.o_account_reports_page .o_account_reports_level0 td {
+    padding-top: 32px;
+    padding-right: 150px;
+}
+
+html .o_web_client > .o_main .o_main_content .o_content {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    height: 100%;
+    overflow: initial;
+    position: relative;
+}
+
+@-moz-document url-prefix() {
+     table {
+    border-collapse: collapse !important;
+}
+th,
+td {
+    border: 1px solid #000 !important;
+}
+
+tbody:empty {
+    display: none !important;
+}
+}

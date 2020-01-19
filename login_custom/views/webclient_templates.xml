@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="login_custom.assets_common_custom">
+        <link rel="stylesheet" type="text/css" href="/web/static/lib/fontawesome/css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cairo:400,700|El+Messiri:400,700"/>
+        <link rel="stylesheet" type="text/css" href="/login_custom/static/src/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/login_custom/static/src/css/style.css"/>
+
+	</template>
+	<template id="login_custom.login_layout_custom" name="Login Layout">
+		<t t-call="web.layout">
+			<t t-set="html_data" t-value="{'style': 'height: 100%;'}"/>
+			<t t-set="head">
+                <t t-call-assets="web.assets_common" t-css="false"/>
+                <t t-call-assets="web.assets_frontend" t-css="false"/>
+				<t t-call-assets="login_custom.assets_common_custom" t-js="false"/>
+			</t>
+			<t t-set="body_classname" t-value="'container'"/>
+			<div class="row">
+				<div class="col-md-12 o_database_list">
+					<t t-raw="0"/>
+					<div class="text-center powered_by" t-if="not disable_footer" >
+						<t t-if="not disable_database_manager and False" >
+							<a class="powered_by" href="/web/database/manager">Manage Databases</a> |                        
+						</t>
+					
+					</div>
+				</div>
+			</div>
+		</t>
+	</template>
+	<template id="web.login" name="Login">
+		<t t-call="login_custom.login_layout_custom">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-2 col-sm-6 col-xs-8">
+					</div>
+					<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+						<div class="card-body">
+							
+							<div style="background: rgba(132, 104, 52, 0.7);margin-top:30px;padding:30px 20px 20px 30px;height:500px">
+								<center>
+							<img src="/login_custom/static/src/img/index.png" style="width:200px;height:150px"/>
+						</center>
+						<br/>
+						<br/>
+						<br/>
+				<form role="form" t-attf-action="/web/login{{ '?debug' if debug else '' }}" method="post" onsubmit="this.action = this.action + location.hash">
+								<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
+						</div>
+						<input type="text" class="form-control" name="login" t-att-value="login" id="login" required="required"  autocapitalize="off" placeholder="User name" />
+						
+					</div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
+						</div>
+						<input type="password" id="password" name="password" class="form-control" required="required" autocomplete="current-password"  maxlength="" placeholder="Password"/>
+					</div>
+					<div id="error" t-if="error"  class="alert alert-danger alert-dismissible fade show" role="alert">
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">x</span>
+								</button>
+								<strong><t t-esc="error"/>! </strong>
+								</div>
+
+
+								<div id="message" t-if="message" class="alert alert-primary alert-dismissible fade show" role="alert">
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">x</span>
+								</button>
+								<strong><t t-esc="message"/>! </strong>
+								</div>
+
+					<input type="hidden" name="redirect" t-att-value="redirect"/>
+
+					<center>
+						<button type="submit"  class="btn login_btn" style="margin-top:20px;border-radius:25px; font-weight: bold;color:white">Login</button>
+					</center>
+						
+					
+				</form>
+			</div>
+
+						<!-- 	<form class="oe_login_form" role="form" t-attf-action="/web/login{{ '?debug' if debug else '' }}" method="post" onsubmit="this.action = this.action + location.hash">
+								<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+
+								<label class="username">Username</label>
+								<input type="text" name="login" t-att-value="login" id="login" class="username-input form-control" required="required" autofocus="autofocus" autocapitalize="off" />
+								<label class="password">Password</label>
+								<input type="password" name="password" id="password" class="password-input form-control" required="required" autocomplete="current-password"  maxlength=""/>
+
+
+								
+
+								<div id="error" t-if="error"  class="alert alert-danger alert-dismissible fade show" role="alert">
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">x</span>
+								</button>
+								<strong><t t-esc="error"/>! </strong>
+								</div>
+
+
+								<div id="message" t-if="message" class="alert alert-primary alert-dismissible fade show" role="alert">
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">x</span>
+								</button>
+								<strong><t t-esc="message"/>! </strong>
+								</div>
+
+								<input type="hidden" name="redirect" t-att-value="redirect"/>
+								<center>
+								<button type="submit" class="btn btn-primary" style="margin-top:20px">Login</button>
+							</center>
+							</form> -->
+						</div>
+						
+					</div>
+					<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+						<div class="form-group field-db" t-if="databases and len(databases) &gt; 1">
+								<label for="db" class="control-label">Database</label>
+								<div class="input-group">
+									<input type="text" name="db" t-att-value="request.db" id="db" class="form-control" required="required" readonly="readonly"/>
+									<span class="input-group-btn">
+										<a href="/web/database/selector" class="btn btn-default">Select 
+											<i class="fa fa-database"></i>
+										</a>
+									</span>
+								</div>
+							</div>
+							
+						
+					</div>
+				</div>
+			
+			</div>
+			
+		</t>
+	</template>
+</odoo>
